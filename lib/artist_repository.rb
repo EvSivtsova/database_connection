@@ -8,7 +8,7 @@ class ArtistRepository
     data_array.each do |artist|
        item = Artist.new
        item.name = artist['name']
-       item.genre = atisit['genre']
+       item.genre = artist['genre']
        all_artists << item
     end
     return all_artists
